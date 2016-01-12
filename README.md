@@ -8,16 +8,18 @@ The [binomial coefficient][binomial-coefficient] of two non-negative integers `n
 
 <div class="equation" align="center" data-raw-text="
     \binom nk = \frac{n!}{k!\,(n-k)!} \quad \text{for }\ 0\leq k\leq n" data-equation="eq:binomial_coefficient">
-	<img src="https://cdn.rawgit.com/compute-io/binomcoef/381304df00ac0cb05857c6108bd51046d984080b/docs/img/eqn1.svg" alt="Factorial formula for the Binomial coefficient.">
+	<img src="https://cdn.rawgit.com/math-io/binomcoef/8ccdd18bf294feceb72b0c010191329a962ee522/docs/img/eqn1.svg" alt="Factorial formula for the Binomial coefficient.">
 	<br>
 </div>
 
 It can be generalized for any two real numbers `n` and `k` as follows
 
 <div class="equation" align="center" data-raw-text="{n \choose k}= \frac{\Gamma(n+1)}{\Gamma(k+1) \Gamma(n-k+1)}= \frac{1}{(n+1) \operatorname{Beta}(n-k+1,k+1)}" data-equation="eq:generalized_binomial_coefficient">
-	<img src="https://cdn.rawgit.com/compute-io/binomcoef/381304df00ac0cb05857c6108bd51046d984080b/docs/img/eqn2.svg" alt="Generalized version of the Binomial coefficient for real numbers.">
+	<img src="https://cdn.rawgit.com/math-io/binomcoef/8ccdd18bf294feceb72b0c010191329a962ee522/docs/img/eqn2.svg" alt="Generalized version of the Binomial coefficient for real numbers.">
 	<br>
 </div>
+
+where `Γ` denotes the [Gamma function][gamma-function] and `Beta` is the [Beta function][beta-function].
 
 ## Installation
 
@@ -60,7 +62,7 @@ val = binomcoef( 3, 1.5 );
 Instead of evaluating the factorial form, which is inefficient and prone to overflow for large inputs arguments, this module computes the following multiplicative representation of the binomial coefficient for integer arguments
 
 <div class="equation" align="center" data-raw-text="\binom nk = \prod_{i=1}^k \frac{n+1-i}{i}" data-equation="eq:multiplicative_representation">
-	<img src="https://cdn.rawgit.com/compute-io/binomcoef/381304df00ac0cb05857c6108bd51046d984080b/docs/img/eqn3.svg" alt="Multiplicative definition of the Binomial coefficient.">
+	<img src="https://cdn.rawgit.com/math-io/binomcoef/8ccdd18bf294feceb72b0c010191329a962ee522/docs/img/eqn3.svg" alt="Multiplicative definition of the Binomial coefficient.">
 	<br>
 </div>
 
@@ -166,6 +168,7 @@ Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 [istanbul]: https://github.com/gotwarlost/istanbul
 [testling]: https://ci.testling.com
 
+[beta-function]: https://en.wikipedia.org/wiki/Beta_function
 [binomial-coefficient]: https://en.wikipedia.org/wiki/Binomial_coefficient
 [compute-io]: https://github.com/compute-io/
 [e]: https://en.wikipedia.org/wiki/E_%28mathematical_constant%29
