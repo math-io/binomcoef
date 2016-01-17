@@ -66,7 +66,7 @@ Instead of evaluating the factorial form, which is inefficient and prone to over
 	<br>
 </div>
 
-For non-integer inputs, the function computes `- ln( n + 1 ) - ln( Beta( n - k + 1, k + 1 ) )` and returns the power this value to base [e][e].
+For non-integer inputs, the function computes `- ln( n + 1 ) - ln( Beta( n - k + 1, k + 1 ) )` and returns the power of this value to base [e][e].
 
 
 ## Examples
